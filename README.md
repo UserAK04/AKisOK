@@ -8,7 +8,7 @@ Cool, Responsive HTML,CSS and Bootstrap Portfolio
 
 # Clone Project
 
-- https://github.com/UserAK04/AKisOK.git
+- git clone https://github.com/UserAK04/AKisOK.git
 
 # Features
 
