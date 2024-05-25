@@ -1,0 +1,16 @@
+.dynabg {
+    z-index: -1;
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    right: 0px;
+}
+
+@media screen and (max-width: 480px) {
+    .dynabg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0px;
+    }
+}
