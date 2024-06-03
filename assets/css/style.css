@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap'); */
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/DTGetaiGroteskDisplay-Black.ttf);
+}
 
 :root {
     /* --color-body: #b6cbce;
@@ -16,7 +21,8 @@
     --color-brand2: #f917aa;
 
     --sidbar-width: 240px;
-    --font-base: "Bai Jamjuree";
+/*     --font-base: "Bai Jamjuree"; */
+    --font-base: myFont;
 }
 
 body {
