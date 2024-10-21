@@ -1,8 +1,8 @@
 # Akshay Kolhe
 
-Cool, Responsive HTML,CSS and Bootstrap Portfolio
+Cool, Responsive HTML, CSS and Bootstrap Portfolio
 
-# Demo
+# Live
 
 - https://akisok.netlify.app/
 
@@ -19,7 +19,7 @@ Cool, Responsive HTML,CSS and Bootstrap Portfolio
 - Sticky Navigation on scrolling
 - and more ..
 
-# Credit
+# Credits
 
 Font:-
 
