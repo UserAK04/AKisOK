@@ -115,6 +115,18 @@ img {
     color: var(--color-brand);
 }
 
+.skilled {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+    .skilled {
+        display: none;
+    }
+}
+
 @media (min-width: 992px) {
     .navbar {
         min-height: 100vh;
