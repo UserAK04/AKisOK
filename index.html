@@ -9,280 +9,320 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./videobg.css">
-    <script src="./assets/js/bootstrap.bundle.min.js" defer></script>
-    <script src="./assets/js/aos.js" defer></script>
-    <script src="./assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container flex-lg-column">
-            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
-                <span class="h3 fw-bold d-block d-lg-none">Akshay<sup>.dev</sup></span>
-<!--                 <img src="./assets/images/akisok.png" class="d-none d-lg-block rounded-circle" alt="Profile Image"> -->
-                <video src="./assets/images/SkilledAK.mp4" class="skilled" autoplay muted loop></video>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+    <!-- My code contri -->
+    <section class="animate__animated" id="ask"
+        style="width: 100%; background-color: antiquewhite; height: 100vh; z-index: 5; position: absolute;">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <!-- <li class="nav-item">
+        <div class="con"
+            style="width: 100%; height: 100%; display: grid; align-items: center; justify-content: center;">
+
+            <div>
+                <h1 class="animate__animated" style="text-align: center;">"Amplify your journey"</h1>
+                <h6 class="animate__animated" style="text-align: center;">Get the full vibe by enabling sound
+                    with one click.</h6>
+            </div>
+
+            <button onclick="slideUp()" id="xyz" href="#home" style="height: 50px; color: #9706e4;">Let's go!</button>
+
+        </div>
+
+    </section>
+    <!-- My code contri -->
+
+    <section class="allContent" style="display: none;">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <!-- <nav class="navbar navbar-expand-lg navbar-dark "> -->
+            <div class="container flex-lg-column">
+                <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                    <span class="h3 fw-bold d-block d-lg-none">Akshay<sup>.dev</sup></span>
+                    <!-- <img src="./assets/images/akisok.png" class="d-none d-lg-block rounded-circle" alt="Profile Image"> -->
+                    <!-- <video src="./assets/images/SkilledAK.mp4" class="skilled" autoplay muted loop></video> -->
+                    <video src="https://res.cloudinary.com/drbe61rqx/video/upload/v1730331614/SkilledAK_d7w3od.mp4"
+                        class="skilled" autoplay muted loop></video>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <!-- <li class="nav-item">
                         <a class="nav-link" href="#reviews">Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#blog">Blog</a>
                     </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
 
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- //NAVBAR -->
-
-    <!-- CONTENT WRAPPER -->
-    <div id="content-wrapper">
-
-        <!-- HOME -->
-        <section id="home" class="full-height px-lg-5">
-
-            <video class="dynabg" autoplay muted loop src="./Black Bg 15.mp4"></video>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10">
-                        <h1 class="display-4 fw-bold" id="hero-heading" data-aos="fade-up">I'M A <span
-                                class="text-brand">MERN STACK DEV</span></h1>
-                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Crafting Digital Experiences,
-                            One Line of Code at a Time.</p>
-                        <div data-aos="fade-up" data-aos-delay="600">
-                            <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
-                            <a href="tel:+91-7559205988" class="link-custom">Call: 7559205988</a>
-                        </div>
-                    </div>
+                    </ul>
                 </div>
             </div>
+        </nav>
+        <!-- //NAVBAR -->
 
-        </section>
-        <!-- //HOME -->
+        <!-- CONTENT WRAPPER -->
+        <div id="content-wrapper">
 
-        <!-- SERVICES -->
-        <section id="services" class="full-height px-lg-5">
-            <div class="container">
+            <!-- HOME -->
+            <section id="home" class="full-height px-lg-5">
 
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">SERVICES</h6>
-                        <h1>Services That I Provide</h1>
+                <!-- <video class="dynabg" autoplay muted loop src="./Black Bg 15.mp4"></video> -->
+                <video class="dynabg" autoplay muted loop
+                    src="https://res.cloudinary.com/drbe61rqx/video/upload/v1730331586/Black_Bg_15_u6p4uw.mp4"></video>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <h1 class="display-4 fw-bold" id="hero-heading" data-aos="fade-up">I'M A <span
+                                    class="text-brand">MERN STACK DEV</span></h1>
+                            <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">Crafting Digital
+                                Experiences,
+                                One Line of Code at a Time.</p>
+                            <div data-aos="fade-up" data-aos-delay="600">
+                                <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                                <!-- <a href="tel:+91-7559205988" class="link-custom">Contact: 7559205988</a> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row gy-4">
+            </section>
+            <!-- //HOME -->
 
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
-                            <div class="iconbox rounded-4">
-                                <i class="las la-feather"></i>
-                            </div>
-                            <h5 class="mt-4 mb-2">UX Design</h5>
-                            <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
-                            <a href="https://www.animaapp.com/blog/design-to-code/how-to-export-figma-to-html/"
-                                class="link-custom">Read More</a>
+            <!-- SERVICES -->
+            <section id="services" class="full-height px-lg-5">
+                <div class="container">
+
+                    <div class="row pb-4" data-aos="fade-up">
+                        <div class="col-lg-8">
+                            <h6 class="text-brand">SERVICES</h6>
+                            <h1>Services That I Provide</h1>
                         </div>
                     </div>
 
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
-                            <div class="iconbox rounded-4">
-                                <i class="las la-pencil-ruler"></i>
-                            </div>
-                            <h5 class="mt-4 mb-2">Responsive Frontends</h5>
-                            <p>With "Mobile-First" Approach, engaging more users.</p>
-                            <a href="https://dev.to/margishpatel/how-to-make-your-html-responsive-using-display-grid-1fj"
-                                class="link-custom">Read More</a>
-                        </div>
-                    </div>
+                    <div class="row gy-4">
 
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
-                            <div class="iconbox rounded-4">
-                                <i class="las la-laptop-code"></i>
+                        <div class="col-md-4" data-aos="fade-up">
+                            <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-4">
+                                    <i class="las la-feather"></i>
+                                </div>
+                                <h5 class="mt-4 mb-2">UX Design</h5>
+                                <p>I craft high-performing and delightful experiences tailored and conversion-focused
+                                </p>
+                                <a href="https://www.animaapp.com/blog/design-to-code/how-to-export-figma-to-html/"
+                                    class="link-custom">Read More</a>
                             </div>
-                            <h5 class="mt-4 mb-2">Backend Connectivity</h5>
-                            <p>Establishing fluent Client & Server Relation</p>
-                            <a href="https://dev.to/rowsanali/backend-development-basics-servers-databases-and-apis-1l7h"
-                                class="link-custom">Read More</a>
                         </div>
+
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-4">
+                                    <i class="las la-pencil-ruler"></i>
+                                </div>
+                                <h5 class="mt-4 mb-2">Responsive Frontends</h5>
+                                <p>With "Mobile-First" Approach, engaging more users.</p>
+                                <a href="https://dev.to/margishpatel/how-to-make-your-html-responsive-using-display-grid-1fj"
+                                    class="link-custom">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-4">
+                                    <i class="las la-laptop-code"></i>
+                                </div>
+                                <h5 class="mt-4 mb-2">Backend Connectivity</h5>
+                                <p>Establishing fluent Client & Server Relation</p>
+                                <a href="https://dev.to/rowsanali/backend-development-basics-servers-databases-and-apis-1l7h"
+                                    class="link-custom">Read More</a>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
+            </section>
+            <!-- SERVICES -->
 
-            </div>
-        </section>
-        <!-- SERVICES -->
+            <!-- WORK -->
+            <section id="work" class="full-height px-lg-5">
+                <div class="container">
 
-        <!-- WORK -->
-        <section id="work" class="full-height px-lg-5">
-            <div class="container">
-
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">WORK</h6>
-                        <h1>My Recent Projects</h1>
-                    </div>
-                </div>
-
-                <div class="row gy-4">
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/project-1.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>IceCream Parlour</h4>
-                                <p>Experience the magic of seamless design.</p>
-                                <a href="https://userak04.github.io/Ice-Cream-Project/" class="link-custom">Explore</a>
-                            </div>
+                    <div class="row pb-4" data-aos="fade-up">
+                        <div class="col-lg-8">
+                            <h6 class="text-brand">WORK</h6>
+                            <h1>My Recent Projects</h1>
                         </div>
                     </div>
 
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/project-2.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Currency Converter WebApp</h4>
-                                <p>All Currency accepted here! </p>
-                                <a href="https://userak04.github.io/Currency-Converter/" class="link-custom">Explore</a>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="row gy-4">
 
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/project-3.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>PermaList</h4>
-                                <p>Everyday, Accomplish one thing on my to do list.</p>
-                                <a href="https://ak-to-do.onrender.com/" class="link-custom">Explore</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/project-4.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Keeper</h4>
-                                <p>Manage Notes & IMP's with me.</p>
-                                <a href="https://v2tlz5.csb.app/" class="link-custom">Explore</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/Wordpress Project.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>AK&Wilds</h4>
-                                <p>A Tours & Travels Website where Wildlife is explored.</p>
-                                <a href="https://drive.google.com/file/d/1VOHWz7yOB1-tWaqRmsCd3I8KHoy8I1PE/view?usp=drive_link" class="link-custom">Explore</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- //WORK -->
-
-        <!-- ABOUT -->
-        <section id="about" class="full-height px-lg-5">
-            <div class="container">
-
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">ABOUT</h6>
-                        <h1>My Education & Experience</h1>
-                    </div>
-                </div>
-
-                <div class="row gy-5">
-                    <div class="col-lg-6">
-
-                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
-                        <div class="row gy-4">
-
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>CBSE (10th)</h4>
-                                    <p class="text-brand mb-2">Sinhgad Spring Dale School (Ambegaon) </p>
-                                    <p class="mb-0">87.6% [438/500]</p>
+                        <div class="col-md-6" data-aos="fade-up">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/project-1.png" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>IceCream Parlour</h4>
+                                    <p>Experience the magic of seamless design.</p>
+                                    <a href="https://userak04.github.io/Ice-Cream-Project/"
+                                        class="link-custom">Explore</a>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>CBSE (12th)</h4>
-                                    <p class="text-brand mb-2">Sinhgad Spring Dale Public School (Vadgaon)</p>
-                                    <p class="mb-0">78.6% [393/500]</p>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/project-2.png" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>Currency Converter WebApp</h4>
+                                    <p>All Currency accepted here! </p>
+                                    <a href="https://userak04.github.io/Currency-Converter/"
+                                        class="link-custom">Explore</a>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Bachelor of Engineering <br> (Information Technology)</h4>
-                                    <p class="text-brand mb-2">NBN Sinhgad Technical Institute Campus(2021-2025)</p>
-                                    <p class="mb-0">8.66 (Agg. Till Sem 5)</p>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/project-3.png" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>PermaList</h4>
+                                    <p>Everyday, Accomplish one thing on my to do list.</p>
+                                    <a href="https://ak-to-do.onrender.com/" class="link-custom">Explore</a>
                                 </div>
                             </div>
+                        </div>
 
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/project-4.png" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>Keeper</h4>
+                                    <p>Manage Notes & IMP's with me.</p>
+                                    <a href="https://v2tlz5.csb.app/" class="link-custom">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4" src="./assets/images/Wordpress Project.png" alt="">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>AK&Wilds</h4>
+                                    <p>A Tours & Travels Website where Wildlife is explored.</p>
+                                    <a href="https://drive.google.com/file/d/1VOHWz7yOB1-tWaqRmsCd3I8KHoy8I1PE/view?usp=drive_link"
+                                        class="link-custom">Explore</a>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
 
-                    <div class="col-lg-6">
+                </div>
+            </section>
+            <!-- //WORK -->
 
-                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
-                        <div class="row gy-4">
+            <!-- ABOUT -->
+            <section id="about" class="full-height px-lg-5">
+                <div class="container">
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Cloud Computing Intern</h4>
-                                    <p class="text-brand mb-2">UniConverge Technologies</p>
-                                    <p class="mb-0">In-Progress</p>
+                    <div class="row pb-4" data-aos="fade-up">
+                        <div class="col-lg-8">
+                            <h6 class="text-brand">ABOUT</h6>
+                            <h1>My Education & Experience</h1>
+                        </div>
+                    </div>
+
+                    <div class="row gy-5">
+                        <div class="col-lg-6">
+
+                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
+                            <div class="row gy-4">
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                                        <h4>CBSE (10th)</h4>
+                                        <p class="text-brand mb-2">Sinhgad Spring Dale School (Ambegaon) </p>
+                                        <p class="mb-0">87.6% [438/500]</p>
+                                    </div>
                                 </div>
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                                        <h4>CBSE (12th)</h4>
+                                        <p class="text-brand mb-2">Sinhgad Spring Dale Public School (Vadgaon)</p>
+                                        <p class="mb-0">78.6% [393/500]</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                                        <h4>Bachelor of Engineering <br> (Information Technology)</h4>
+                                        <p class="text-brand mb-2">NBN Sinhgad Technical Institute Campus(2021-2025)</p>
+                                        <p class="mb-0">8.63 (Agg. Till Sem 6)</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
+                            <div class="row gy-4">
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                                        <h4>Cloud Computing Intern</h4>
+                                        <p class="text-brand mb-2">UniConverge Technologies</p>
+                                        <p class="mb-0">In-Progress</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                                        <h4>MERN Stack Intern</h4>
+                                        <p class="text-brand mb-2">WebStackAcademy</p>
+                                        <p class="mb-0">In-Progress</p>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
@@ -290,13 +330,11 @@
                     </div>
 
                 </div>
+            </section>
+            <!-- //ABOUT -->
 
-            </div>
-        </section>
-        <!-- //ABOUT -->
-
-        <!-- REVIEWS -->
-        <!-- <section id="reviews" class="full-height px-lg-5">
+            <!-- REVIEWS -->
+            <!-- <section id="reviews" class="full-height px-lg-5">
             <div class="container">
 
                 <div class="row pb-4" data-aos="fade-up">
@@ -372,10 +410,10 @@
 
             </div>
         </section> -->
-        <!-- //REVIEWS -->
+            <!-- //REVIEWS -->
 
-        <!-- BLOG -->
-        <!-- <section id="blog" class="full-height px-lg-5">
+            <!-- BLOG -->
+            <!-- <section id="blog" class="full-height px-lg-5">
             <div class="container">
 
                 <div class="row pb-4" data-aos="fade-up">
@@ -430,113 +468,181 @@
 
             </div>
         </section> -->
-        <!-- //BLOG -->
+            <!-- //BLOG -->
 
-        <!-- CONTACT -->
-        <section id="contact" class="full-height px-lg-5">
-            <div class="container">
+            <!-- CONTACT -->
+            <section id="contact" class="full-height px-lg-5">
+                <div class="container">
 
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-8 pb-4" data-aos="fade-up">
-                        <h6 class="text-brand">CONTACT</h6>
-                        <h1>Interested in working together? Let's talk
-                        </h1>
+                    <div class="row justify-content-center text-center">
+                        <div class="col-lg-8 pb-4" data-aos="fade-up">
+                            <h6 class="text-brand">CONTACT</h6>
+                            <h1>Interested in working together? Let's talk
+                            </h1>
+                        </div>
+
+                        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                            <form action="#" class="row g-lg-3 gy-3">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <input type="text" class="form-control" placeholder="Enter subject">
+                                </div>
+                                <div class="form-group col-12">
+                                    <textarea name="" rows="4" class="form-control"
+                                        placeholder="Enter your message"></textarea>
+                                </div>
+                                <div class="form-group col-12 d-grid">
+                                    <button type="submit" class="btn btn-brand">Contact me</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <marquee behavior="alternate" direction="loop">
+                        <img src="https://skillicons.dev/icons?i=c" alt="C">
+                        <img src="https://skillicons.dev/icons?i=cpp" alt="C">
+                        <img src="https://skillicons.dev/icons?i=java" alt="C">
+                        <img src="https://skillicons.dev/icons?i=html" alt="C">
+                        <img src="https://skillicons.dev/icons?i=css" alt="C">
+                        <img src="https://skillicons.dev/icons?i=js" alt="C">
+                        <img src="https://skillicons.dev/icons?i=mongodb" alt="C">
+                        <img src="https://skillicons.dev/icons?i=express" alt="C">
+                        <img src="https://skillicons.dev/icons?i=react" alt="C">
+                        <img src="https://skillicons.dev/icons?i=nodejs" alt="C">
+                        <img src="https://skillicons.dev/icons?i=express" alt="C">
+                        <img src="https://skillicons.dev/icons?i=mysql" alt="C">
+                        <img src="https://skillicons.dev/icons?i=postgres" alt="C">
+                        <img src="https://skillicons.dev/icons?i=bootstrap" alt="C">
+                        <img src="https://skillicons.dev/icons?i=tailwind" alt="C">
+                        <img src="https://skillicons.dev/icons?i=jquery" alt="C">
+                        <img src="https://skillicons.dev/icons?i=materialui" alt="C">
+                        <img src="https://skillicons.dev/icons?i=npm" alt="C">
+                        <img src="https://skillicons.dev/icons?i=vite" alt="C">
+                        <img src="https://skillicons.dev/icons?i=anaconda" alt="C">
+                        <img src="https://skillicons.dev/icons?i=aws" alt="C">
+                        <img src="https://skillicons.dev/icons?i=azure" alt="C">
+                        <img src="https://skillicons.dev/icons?i=gcp" alt="C">
+                        <img src="https://skillicons.dev/icons?i=bash" alt="C">
+                        <img src="https://skillicons.dev/icons?i=figma" alt="C">
+                        <img src="https://skillicons.dev/icons?i=webflow" alt="C">
+                        <img src="https://skillicons.dev/icons?i=wordpress" alt="C">
+                        <img src="https://skillicons.dev/icons?i=git" alt="C">
+                        <img src="https://skillicons.dev/icons?i=github" alt="C">
+                        <img src="https://skillicons.dev/icons?i=idea" alt="C">
+                        <img src="https://skillicons.dev/icons?i=windows" alt="C">
+                        <img src="https://skillicons.dev/icons?i=linux" alt="C">
+                        <img src="https://skillicons.dev/icons?i=ubuntu" alt="C">
+                        <img src="https://skillicons.dev/icons?i=netlify" alt="C">
+                        <img src="https://skillicons.dev/icons?i=vercel" alt="C">
+                        <img src="https://skillicons.dev/icons?i=notion" alt="C">
+                        <img src="https://skillicons.dev/icons?i=postman" alt="C">
+                        <img src="https://skillicons.dev/icons?i=replit" alt="C">
+                        <img src="https://skillicons.dev/icons?i=sublime" alt="C">
+                        <img src="https://skillicons.dev/icons?i=vscode" alt="C">
+                    </marquee> -->
+                    <div class="marquee-container">
+                        <div class="marquee-content">
+                            <img src="https://skillicons.dev/icons?i=c" alt="C">
+                            <img src="https://skillicons.dev/icons?i=cpp" alt="C++">
+                            <img src="https://skillicons.dev/icons?i=java" alt="Java">
+                            <img src="https://skillicons.dev/icons?i=html" alt="HTML">
+                            <img src="https://skillicons.dev/icons?i=css" alt="CSS">
+                            <img src="https://skillicons.dev/icons?i=js" alt="JavaScript">
+                            <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB">
+                            <img src="https://skillicons.dev/icons?i=express" alt="Express">
+                            <img src="https://skillicons.dev/icons?i=react" alt="React">
+                            <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js">
+                            <img src="https://skillicons.dev/icons?i=express" alt="Express">
+                            <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL">
+                            <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL">
+                            <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap">
+                            <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS">
+                            <img src="https://skillicons.dev/icons?i=jquery" alt="jQuery">
+                            <img src="https://skillicons.dev/icons?i=materialui" alt="Material UI">
+                            <img src="https://skillicons.dev/icons?i=npm" alt="NPM">
+                            <img src="https://skillicons.dev/icons?i=vite" alt="Vite">
+                            <img src="https://skillicons.dev/icons?i=anaconda" alt="Anaconda">
+                            <img src="https://skillicons.dev/icons?i=aws" alt="AWS">
+                            <img src="https://skillicons.dev/icons?i=azure" alt="Azure">
+                            <img src="https://skillicons.dev/icons?i=gcp" alt="GCP">
+                            <img src="https://skillicons.dev/icons?i=bash" alt="Bash">
+                            <img src="https://skillicons.dev/icons?i=figma" alt="Figma">
+                            <img src="https://skillicons.dev/icons?i=webflow" alt="Webflow">
+                            <img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress">
+                            <img src="https://skillicons.dev/icons?i=git" alt="Git">
+                            <img src="https://skillicons.dev/icons?i=github" alt="GitHub">
+                            <img src="https://skillicons.dev/icons?i=idea" alt="IDEA">
+                            <img src="https://skillicons.dev/icons?i=windows" alt="Windows">
+                            <img src="https://skillicons.dev/icons?i=linux" alt="Linux">
+                            <img src="https://skillicons.dev/icons?i=ubuntu" alt="Ubuntu">
+                            <img src="https://skillicons.dev/icons?i=netlify" alt="Netlify">
+                            <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel">
+                            <img src="https://skillicons.dev/icons?i=notion" alt="Notion">
+                            <img src="https://skillicons.dev/icons?i=postman" alt="Postman">
+                            <img src="https://skillicons.dev/icons?i=replit" alt="Replit">
+                            <img src="https://skillicons.dev/icons?i=sublime" alt="Sublime">
+                            <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code">
+                        </div>
                     </div>
 
-                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-                        <form action="#" class="row g-lg-3 gy-3">
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="Enter your name">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="email" class="form-control" placeholder="Enter your email">
-                            </div>
-                            <div class="form-group col-12">
-                                <input type="text" class="form-control" placeholder="Enter subject">
-                            </div>
-                            <div class="form-group col-12">
-                                <textarea name="" rows="4" class="form-control"
-                                    placeholder="Enter your message"></textarea>
-                            </div>
-                            <div class="form-group col-12 d-grid">
-                                <button type="submit" class="btn btn-brand">Contact me</button>
-                            </div>
-                        </form>
-                    </div>
+
                 </div>
-                <marquee behavior="alternate" direction="loop">
-                    <img src="https://skillicons.dev/icons?i=c" alt="C">
-                    <img src="https://skillicons.dev/icons?i=cpp" alt="C++">
-                    <img src="https://skillicons.dev/icons?i=java" alt="Java">
-                    <img src="https://skillicons.dev/icons?i=html" alt="Html">
-                    <img src="https://skillicons.dev/icons?i=css" alt="CSS">
-                    <img src="https://skillicons.dev/icons?i=js" alt="JavaScript">
-                    <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB">
-                    <img src="https://skillicons.dev/icons?i=express" alt="Express">
-                    <img src="https://skillicons.dev/icons?i=react" alt="React">
-                    <img src="https://skillicons.dev/icons?i=nodejs" alt="Nodejs">
-                    <img src="https://skillicons.dev/icons?i=express" alt="Express">
-                    <img src="https://skillicons.dev/icons?i=mysql" alt="MYSQL">
-                    <img src="https://skillicons.dev/icons?i=postgres" alt="PostGres">
-                    <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap">
-                    <img src="https://skillicons.dev/icons?i=tailwind" alt="TailwindCSS">
-                    <img src="https://skillicons.dev/icons?i=jquery" alt="jQuery">
-                    <img src="https://skillicons.dev/icons?i=materialui" alt="MaterialUI">
-                    <img src="https://skillicons.dev/icons?i=npm" alt="NPM">
-                    <img src="https://skillicons.dev/icons?i=vite" alt="Vite">
-                    <img src="https://skillicons.dev/icons?i=anaconda" alt="Anaconda">
-                    <img src="https://skillicons.dev/icons?i=aws" alt="AWS">
-                    <img src="https://skillicons.dev/icons?i=azure" alt="AZURE">
-                    <img src="https://skillicons.dev/icons?i=gcp" alt="GCP">
-                    <img src="https://skillicons.dev/icons?i=bash" alt="Bash">
-                    <img src="https://skillicons.dev/icons?i=figma" alt="Figma">
-                    <img src="https://skillicons.dev/icons?i=webflow" alt="Webflow">
-                    <img src="https://skillicons.dev/icons?i=wordpress" alt="Wordpress">
-                    <img src="https://skillicons.dev/icons?i=git" alt="Git">
-                    <img src="https://skillicons.dev/icons?i=github" alt="Github">
-                    <img src="https://skillicons.dev/icons?i=idea" alt="Idea">
-                    <img src="https://skillicons.dev/icons?i=windows" alt="Windows">
-                    <img src="https://skillicons.dev/icons?i=linux" alt="Linux">
-                    <img src="https://skillicons.dev/icons?i=ubuntu" alt="Ubuntu">
-                    <img src="https://skillicons.dev/icons?i=netlify" alt="Netlify">
-                    <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel">
-                    <img src="https://skillicons.dev/icons?i=notion" alt="Notion">
-                    <img src="https://skillicons.dev/icons?i=postman" alt="Postman">
-                    <img src="https://skillicons.dev/icons?i=replit" alt="Replit">
-                    <img src="https://skillicons.dev/icons?i=sublime" alt="Sublime">
-                    <img src="https://skillicons.dev/icons?i=vscode" alt="VScode">
-                </marquee>
-                
-            </div>
-        </section>
-        <!-- //CONTACT -->
+            </section>
+            <!-- //CONTACT -->
 
-        <!-- FOOTER -->
-        <footer class="py-5 px-lg-5">
-            <div class="container">
-                <div class="row gy-4 justify-content-between">
-                    <div class="col-auto">
-                        <p class="mb-0">Designed with <i class="las la-heart"></i> by <a href="#"
-                                class="fw-bold">AKSHAY</a></p>
-                    </div>
-                    <div class="col-auto">
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/akisok/"><i class="lab la-linkedin"></i></a>
-                            <a href="https://github.com/UserAK04"><i class="lab la-github"></i></a>
+            <!-- FOOTER -->
+            <footer class="py-5 px-lg-5">
+                <div class="container">
+                    <div class="row gy-4 justify-content-between">
+                        <div class="col-auto">
+                            <p class="mb-0">Designed with <i class="las la-heart"></i> by <a href="#"
+                                    class="fw-bold">AKSHAY</a></p>
+                        </div>
+                        <div class="col-auto">
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/akisok/"><i class="lab la-linkedin"></i></a>
+                                <a href="https://github.com/UserAK04"><i class="lab la-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        <!-- //FOOTER -->
+            </footer>
+            <!-- //FOOTER -->
 
-    </div>
-    <!-- //CONTENT WRAPPER -->
+        </div>
+        <!-- //CONTENT WRAPPER -->
+    </section>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
 </body>
 
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <!-- https://safi.me.uk/typewriterjs/ -->
 <script>
+
+    //script for dynabg:start
+
+    // var bg = document.getElementById("xyz");
+    // let dyna = 1;
+    // setInterval(() => {
+    //     dyna = dyna+1;
+    //     if (dyna == 10) {
+    //         dyna = 1;
+    //     }
+    //     console.log(dyna);
+    // }, 2000);
+    // let x = `./Aesthetic Background/Black Bg ${dyna}.mp4`
+    // bg.setAttribute('src', x);
+
+    //end
+
     var app = document.querySelector("#hero-heading");
 
     var typewriter = new Typewriter(app, {
